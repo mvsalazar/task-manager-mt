@@ -15,15 +15,15 @@ public class Routine {
 
     private User user;
 
-    public Integer getId() { return id; }
+    public Integer getId() { return this.id; }
 
     public void setId(Integer id) { this.id = id; }
 
-    public String getName() { return name; }
+    public String getName() { return this.name; }
 
     public void setName(String name) { this.name = name; }
 
-    public User getUser() { return user; }
+    public User getUser() { return this.user; }
 
     public void setUser(User user) { this.user = user; }
 }
