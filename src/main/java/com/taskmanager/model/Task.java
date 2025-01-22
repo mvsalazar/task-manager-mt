@@ -13,34 +13,34 @@ public class Task {
 
     private String name;
 
-    private Integer routine;
+    private Routine routine;
 
-    private boolean completed;
+    private TaskStatus status;
 
     private String icon;
 
-    public Integer getId() { return id; }
+    public Integer getId() { return this.id; }
 
     public void setId(Integer id) { this.id = id; }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public Integer getRoutine() { return routine; }
+    public Routine getRoutine() { return this.routine; }
 
-    public void setRoutine(Integer routine) { this.routine = routine; }
+    public void setRoutine(Routine routine) { this.routine = routine; }
 
-    public boolean getCompleted() { return completed; }
+    public TaskStatus getCompleted() { return this.status; }
 
-    public void setCompleted(boolean completed) { this.completed = completed; }
+    public void setCompleted(TaskStatus status) { this.status = status; }
 
     public String getIcon() {
-        return icon;
+        return this.icon;
     }
 
     public void setIcon(String icon) {

@@ -13,9 +13,7 @@ public class Routine {
 
     private String name;
 
-    private Integer parent;
-
-    private Integer child;
+    private User user;
 
     public Integer getId() { return id; }
 
@@ -25,11 +23,7 @@ public class Routine {
 
     public void setName(String name) { this.name = name; }
 
-    public Integer getParent() { return parent; }
+    public User getUser() { return user; }
 
-    public void setParent(Integer parent) { this.parent = parent; }
-
-    public Integer getChild() { return child; }
-
-    public void setChild(Integer child) { this.child = child; }
+    public void setUser(User user) { this.user = user; }
 }
