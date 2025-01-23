@@ -15,6 +15,8 @@ public class Routine {
 
     private User user;
 
+    private Dashboard dashboard;
+
     public Integer getId() { return this.id; }
 
     public void setId(Integer id) { this.id = id; }
@@ -26,4 +28,8 @@ public class Routine {
     public User getUser() { return this.user; }
 
     public void setUser(User user) { this.user = user; }
+
+    public Dashboard getDashboard() { return this.dashboard; };
+
+    public void setDashboard(Dashboard dashboard) { this.dashboard = dashboard; };
 }
