@@ -1,9 +1,18 @@
 package com.taskmanager.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToMany;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Routine {
@@ -13,23 +22,29 @@ public class Routine {
 
     private String name;
 
-    private User user;
-
+    @ManyToOne
+    @JoinColumn(name = "routine_id")
     private Dashboard dashboard;
+
+    @OneToMany(mappedBy = "routine", cascade = CascadeType.ALL)
+    private List<Task> tasks;
+
+    @ManyToMany(mappedBy = "routines")
+    final private Set<User> users = new HashSet<>();
 
     public Integer getId() { return this.id; }
 
-    public void setId(Integer id) { this.id = id; }
+    public void setId(final Integer id) { this.id = id; }
 
     public String getName() { return this.name; }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(final String name) { this.name = name; }
 
-    public User getUser() { return this.user; }
+    public List<Task> getTasks() { return this.tasks; };
 
-    public void setUser(User user) { this.user = user; }
+    public Set<User> getUsers() { return this.users; }
 
     public Dashboard getDashboard() { return this.dashboard; };
 
-    public void setDashboard(Dashboard dashboard) { this.dashboard = dashboard; };
+    public void setDashboard(final Dashboard dashboard) { this.dashboard = dashboard; };
 }

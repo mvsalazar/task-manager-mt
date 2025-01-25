@@ -1,12 +1,12 @@
+import React from 'react';
+import { AutoGrid } from '@vaadin/hilla-react-crud';
+import { UserService } from 'Frontend/generated/endpoints';
+import UserModel from 'Frontend/generated/com/taskmanager/model/UserModel';
+
 export default function HomeView() {
   return (
-    <div>
-      <h1>Welcome to your new application</h1>
-      <p>This is the home view.</p>
-      <p>
-        You can edit this view in <code>src/main/frontend/views/@index.tsx</code> or by
-        activating Copilot by clicking the icon in the lower right corner
-      </p>
+    <div className='p-1'>
+      <AutoGrid service={UserService} model={UserModel} />
     </div>
   );
 }
