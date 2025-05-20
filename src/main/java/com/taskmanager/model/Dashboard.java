@@ -23,11 +23,11 @@ public class Dashboard {
 
     public void setId(final Integer id) { this.id = id; }
 
-    public String getName() { return this.name; };
+    public String getName() { return this.name; }
 
-    public void setName(final String name) { this.name = name; };
+    public void setName(final String name) { this.name = name; }
 
-    public Family getFamily() { return this.family; };
+    public Family getFamily() { return this.family; }
 
-    public void setFamily(final Family family) { this.family = family; };
+    public void setFamily(final Family family) { this.family = family; }
 }

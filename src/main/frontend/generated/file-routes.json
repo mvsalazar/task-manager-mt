@@ -3,6 +3,50 @@
     "route": "",
     "flowLayout": false,
     "params": {},
-    "title": "Home"
+    "title": "Main Layout",
+    "children": [
+      {
+        "route": "",
+        "flowLayout": false,
+        "params": {},
+        "title": "Home"
+      },
+      {
+        "route": "admin",
+        "params": {},
+        "children": [
+          {
+            "route": "",
+            "flowLayout": false,
+            "params": {},
+            "title": "Example"
+          },
+          {
+            "route": "add-user",
+            "flowLayout": false,
+            "params": {},
+            "title": "Add User"
+          },
+          {
+            "route": "setup-family",
+            "flowLayout": false,
+            "params": {},
+            "title": "Setup Family"
+          },
+          {
+            "route": "users",
+            "flowLayout": false,
+            "params": {},
+            "title": "Users"
+          }
+        ]
+      },
+      {
+        "route": "example",
+        "flowLayout": false,
+        "params": {},
+        "title": "Example"
+      }
+    ]
   }
 ]

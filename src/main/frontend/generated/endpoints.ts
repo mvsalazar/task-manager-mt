@@ -1,3 +1,11 @@
+import * as DashboardEndpoint_1 from "./DashboardEndpoint.js";
+import * as DashboardService_1 from "./DashboardService.js";
+import * as FamilyEndpoint_1 from "./FamilyEndpoint.js";
+import * as FamilyService_1 from "./FamilyService.js";
+import * as RoutineEndpoint_1 from "./RoutineEndpoint.js";
+import * as RoutineService_1 from "./RoutineService.js";
+import * as TaskEndpoint_1 from "./TaskEndpoint.js";
+import * as TaskService_1 from "./TaskService.js";
 import * as UserEndpoint_1 from "./UserEndpoint.js";
 import * as UserService_1 from "./UserService.js";
-export { UserEndpoint_1 as UserEndpoint, UserService_1 as UserService };
+export { DashboardEndpoint_1 as DashboardEndpoint, DashboardService_1 as DashboardService, FamilyEndpoint_1 as FamilyEndpoint, FamilyService_1 as FamilyService, RoutineEndpoint_1 as RoutineEndpoint, RoutineService_1 as RoutineService, TaskEndpoint_1 as TaskEndpoint, TaskService_1 as TaskService, UserEndpoint_1 as UserEndpoint, UserService_1 as UserService };

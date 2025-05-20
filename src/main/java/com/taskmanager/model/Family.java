@@ -22,6 +22,12 @@ public class Family {
     @OneToMany(mappedBy = "family", cascade = CascadeType.ALL)
     private List<Dashboard> dashboards;
 
+    public Family() {};
+
+    public Family(final String name) {
+        this.name = name;
+    }
+
     public Integer getId() { return this.id; }
 
     public void setId(final Integer id) { this.id = id; }
